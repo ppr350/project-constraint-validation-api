@@ -22,7 +22,7 @@
                name="email"
                minlength="3"
                maxlength="64"
-               value="example.com"
+               placeholder="exam@ple.com"
                required>
         <span class="error" aria-live="polite"></span>
 
@@ -43,14 +43,16 @@
         <input type="text"
                id="zip-code"
                name="zip-code"
+               placeholder="T23 EV80"
                required
-               minlength="4">
+               minlength="4"
+               maxlength="15">
         <span class="error" aria-live="polite"></span>
 
         <label for="password">
           <span>password:</span>
         </label>
-        <input type="text"
+        <input type="password"
                id="password"
                name="password"
                required
@@ -60,7 +62,7 @@
         <label for="confirm-password">
           <span>confirm password:</span>
         </label>
-        <input type="text"
+        <input type="password"
                id="confirm-password"
                name="confirm-password"
                required
