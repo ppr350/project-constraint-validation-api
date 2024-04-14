@@ -7,12 +7,12 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
-    watchFiles: {
-      paths: ['src/**/*.php', 'public/**/*'],
-      options: {
-        usePolling: false,
-      },
-    },
+    // watchFiles: {
+    //   paths: ['src/**/*.php', 'public/**/*'],
+    //   options: {
+    //     usePolling: false,
+    //   },
+    // },
   },
   output: {
     filename: '[name].bundle.js',
