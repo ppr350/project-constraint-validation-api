@@ -1,77 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>JavaScript Constraint Validation API</title>
-<script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
-<body>
+  <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
+  <body>
     <h1 id="title">JavaScript Constraint Validation API</h1>
 
     <div id="form-container">
-      <form novalidate
-            action=""
-            id="form">
-
+      <form novalidate action="" id="form">
         <label for="email">
           <span>email address:</span>
         </label>
-        <input type="email"
-               id="email"
-               name="email"
-               minlength="3"
-               maxlength="64"
-               placeholder="exam@ple.com"
-               required>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          minlength="3"
+          maxlength="64"
+          placeholder="exam@ple.com"
+          required
+        />
         <span class="error" aria-live="polite"></span>
 
         <label for="Country">
           <span>country:</span>
         </label>
-        <input type="text"
-               id="country"
-               name="country"
-               required
-               minlength="3"
-               maxlength="15">
+        <input
+          type="text"
+          id="country"
+          name="country"
+          required
+          minlength="3"
+          maxlength="15"
+        />
         <span class="error" aria-live="polite"></span>
 
         <label for="zip-code">
           <span>zip code:</span>
         </label>
-        <input type="text"
-               id="zip-code"
-               name="zip-code"
-               placeholder="T23 EV80"
-               required
-               minlength="4"
-               maxlength="15">
+        <input
+          type="text"
+          id="zip-code"
+          name="zip-code"
+          placeholder="T23 EV80"
+          required
+          minlength="4"
+          maxlength="15"
+        />
         <span class="error" aria-live="polite"></span>
 
         <label for="password">
           <span>password:</span>
         </label>
-        <input type="password"
-               id="password"
-               name="password"
-               required
-               minlength="8">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+        />
         <span class="error" aria-live="polite"></span>
 
         <label for="confirm-password">
           <span>confirm password:</span>
         </label>
-        <input type="password"
-               id="confirm-password"
-               name="confirm-password"
-               required
-               minlength="8">
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+          minlength="8"
+        />
         <span class="error" aria-live="polite"></span>
 
         <button style="vertical-align: middle"><span>submit </span></button>
-
       </form>
     </div>
-</body>
+  </body>
 </html>
